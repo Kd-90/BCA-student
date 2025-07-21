@@ -1,24 +1,34 @@
-#include "calculator.h" // Include the header file
+#include <iostream>
+using namespace std;
 
-int add(int a, int b) {
-    return a + b;
+int main () {
+    for(int row = 0; row < 7; row++) {
+       for(int col = 0; col < 5; col++) {
+          if(row == 0 || row == 6)
+              cout << "x";
+     else if (col == 0)
+         cout << "x";
+    else  
+        cout << "" ;
 }
+cout "";
 
-int subtract(int a, int b) {
-    return a - b;
+for(int col = 0; col < 5; col++) {
+   if(col == 2 || row == 3)
+       cout << "x";
+  else
+       cout << "";
 }
+cout << " ";
 
-int multiply(int a, int b) {
-    return a * b;
+for(int col = 0; col < 5; col++) {
+   if(col == 2 || row == 3)
+       cout << "x";
+else
+       cout << "";
 }
-
-double divide(int a, int b) {
-    // Implement error handling for division by zero
-    if (b == 0) {
-        // You might want to throw an exception or return a special value
-        // For simplicity, we'll print an error and return 0.0
-        // In a real application, more robust error handling is needed.
-        return 0.0; // Or indicate an error
-    }
-    return static_cast<double>(a) / b; // Cast to double for floating-point division
+cout << endl;
 }
+return 0;
+}
+ 
